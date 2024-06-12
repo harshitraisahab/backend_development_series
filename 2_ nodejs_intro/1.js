@@ -15,7 +15,7 @@
     if (err) console.error(err);
     else console.log("sd");
   });
-  fs.rename("1.txt", "new.txt", function (err) {
+  fs.rename(`./files/${txt}`, "new.txt", function (err) {
     if (err) console.error(err);
     else console.log("sd");
   });
