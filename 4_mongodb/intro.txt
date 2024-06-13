@@ -1,0 +1,14 @@
+database -> store all data , videos ,songs all
+database 2-> sql, nosql
+sql -> table format m,
+nosql ->objects ke roop m
+nosql(tree) -> mongodb(mango tree)
+mongodb ->store data , msg time all about
+now backend has two data server -> application(node),database ser(mongodb)
+
+database (facebook database)->collection(user collection)->document(harshit)
+
+code  -> database
+mongoose.connect -> database create
+model ->collection
+create, schema-> document

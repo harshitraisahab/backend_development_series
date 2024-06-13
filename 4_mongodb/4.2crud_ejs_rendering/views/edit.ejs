@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+
+ <div class="h-full w-full bg-zinc-900 p-10 text-white">
+
+  <div class="nav mb-5 " >
+    <a href="/show" class="text-blue-500">Show All Users </a>
+  </div>
+
+  <h1 class="text-3xl tracking-tighter mb-5">Update User</h1>
+  <form action="/update/<%=user._id%>" method="post">
+    <input value="<%=user.name%>" type="text" required name="name" placeholder="Name" class="px-5 py-3 border-2 border-zinc-800 rounded outline-none bg-transparent">
+    <input value="<%=user.email%>"  type="text" required name="email" placeholder="Email" class="px-5 py-3 border-2 border-zinc-800 rounded outline-none bg-transparent">
+   <input  value="<%=user.imageurl%>" type="text" name="imageurl"  placeholder="Image url" class="px-5 py-3 border-2 border-zinc-800 rounded outline-none bg-transparent">
+ <input type="submit" value="update" class="bg-yellow-800 px-5 py-2 rounded-lg">
+     </form>
+ </div>
+</body>
+</html>
+
+<div class="users flex gap-3 flex-wrap">
+  <div class="w-72 p-4 mt-5 bg-zinc-800 rounded-lg">
+    <div class="w-full h-52 bg-red-500 rounded-lg"></div>
+    <h3 class="text-xl bg-zinc-800 mt-3 tracking-tighter">Harshit Rai</h3>
+    <h5 class=" bg-zinc-800 text-zinc-500">harshit.rai.phe21@iitbhu.ac.in</h5>
+   <div class="flex gap-3 bg-zinc-800">
+    <a class="text-blue-600 bg-zinc-800" href="/edit">Edit User</a>
+    <a class="text-red-600 bg-zinc-800" href="/delete">Delete User</a>
+   </div>
+  </div>
